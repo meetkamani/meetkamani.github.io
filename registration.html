@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title> Registration </title>
+            <style>
+                  * {
+                        font-size:21pt;
+                  }
+            </style>
+	</head>
+	<body>
+		<form>
+			<br>
+			Already have an account 
+			<a href="index.html" title="Login" style="color: red;text-decoration: none"> Login </a>
+			<br>
+			<br>
+			
+			<fieldset>
+				<legend style="color: blue;">New User</legend>
+				<table style="text-align: right;">
+					<tr>
+						<td> First Name </td>
+						<td> <input type="text"> </td>
+					</tr>
+					<tr>
+						<td> Last Name </td> 
+						<td> <input type="text"> </td>
+					</tr>
+					<tr>
+						<td> Email </td>
+						<td> <input type="email" required> </td>
+					</tr>
+					<tr>
+						<td> Password </td>
+						<td> <input type="password" required> </td>
+					</tr>
+					<tr>
+						<td> Mobile No. </td>
+						<td> <input type="tel" pattern="[0-9]{10}"> </td>
+					</tr>
+				</table>
+				<input type="button" value="Cancel" style="font-size: 80%">
+				<input type="submit" value="Submit" style="font-size: 80%">
+				<input type="reset" value="Reset" style="font-size: 80%">
+			</fieldset>
+			<br>
+		</form>
+	</body>
+</html>

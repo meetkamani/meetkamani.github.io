@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Sign In </title>
+	<style type="text/css" media="screen">
+		* {
+			font-size: 21pt;
+		}
+	</style>
+</head>
+<body>
+    <br>
+    Don't have an account 
+    <a href="registration.html" title="Registration" style="color: red; text-decoration: none"> Create New Account</a>
+    <br> <br>
+
+    <fieldset>
+    	<legend style="color: blue;">Login</legend>
+	<form action="userServlet" method="POST">
+            <table>
+		<tbody>
+		<tr>
+                     <td> Name </td>
+                     <td> <input size="25" type="text" name="username" placeholder="Rahul"></td>
+		</tr>
+		<tr>
+                     <td> Email </td>
+                     <td> <input size="25" type="text" name="useremail" placeholder="xyz@gmail.com"></td>
+		</tr>
+		<tr>
+                     <td> Password </td>
+                     <td> <input size="25" type="password" name="password" placeholder="********"></td>
+		</tr>
+		<tr>
+                     <td> <input type="reset" value="Reset"></td>
+                     <td> <input type="submit" value="Submit"> </td>
+		</tr>
+            </tbody>
+        </table>
+	</form>
+    </fieldset>
+</body>
+</html>
