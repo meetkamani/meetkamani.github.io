@@ -1,0 +1,21 @@
+* {
+    font-size: 21pt;
+}
+.head{
+    box-shadow: 5px 5px 5px 5px black;
+    text-align: center;
+}
+.head a:link,a:visited{
+    color: red; 
+    text-decoration: none;
+}
+.head a:link:hover,a:active{
+    color: rgb(31, 111, 230);
+}
+body{
+    background-image: url("../images/reserved.jpg");
+}
+.tab table{
+    margin-left: 400px;
+    box-shadow: 5px 5px 5px 5px black;
+}

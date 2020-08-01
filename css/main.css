@@ -1,0 +1,24 @@
+* {
+    margin: 0;
+}
+
+.head {
+    font-size: 30px;
+    height: 40px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+    color: rgb(184, 143, 91);
+    text-shadow: 2px 2px 2px white;
+    background-color: black;
+    background-image: linear-gradient(90deg,white,black,white);
+}
+.main{
+    font-size: 22px;
+    background-image: url("../images/syth.jpg");
+}
+.main table{
+    font-size: 22px;
+    margin-left: 180px;
+    box-shadow: 5px 5px 5px 5px black;
+}

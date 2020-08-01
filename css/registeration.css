@@ -1,0 +1,25 @@
+* {
+    font-size: 21pt;
+}
+.head{
+    box-shadow: 5px 5px 5px 5px black;
+    text-align: center;
+}
+.head a:link,a:visited{
+    color: red; 
+    text-decoration: none;
+}
+.head a:link:hover,a:active{
+    color: rgb(111, 230, 31);
+}
+body{
+    background-image: url("../images/registr.jpg");
+}
+.tab table{
+    text-shadow:2px 2px 2px black;
+    color: black;
+    width: 350px;
+    height: 460px;
+    margin-left: 450px;
+    box-shadow: 5px 5px 5px 5px black;
+}

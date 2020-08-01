@@ -1,0 +1,23 @@
+* {
+    font-size: 18pt;
+}
+
+body {
+    background-image: url("../images/stc.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: 5px 5px 5px 5px black;
+}
+.main a:link,a:visited{
+    text-decoration: none;
+    font-size: 25px;
+    border: 1px;
+    color: black;
+    background-color: antiquewhite;
+}
+.main{
+    padding: 30px;
+    font-weight: bold;
+    box-shadow: 5px 5px 5px 5px black;
+}
