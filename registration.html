@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title> Registration </title>
+	<link rel="stylesheet" href="./css/registeration.css">
+</head>
+
+<body>
+
+
+	<div class="head">
+		Already have an account
+		<a href="index.html" title="Login"> Login </a>
+	</div>
+	<br>
+	<div class="tab">
+		<form action="./index.html" id="myform">
+			<fieldset>
+				<legend align="center" style="color: blue;">New User</legend>
+				<table style="text-align: left;">
+					<tr>
+						<td> First Name </td>
+						<td> <input type="text" name="name" placeholder="Meet"> </td>
+					</tr>
+					<tr>
+						<td> Last Name </td>
+						<td> <input type="text" name="lname" placeholder="Kamani"> </td>
+					</tr>
+					<tr>
+						<td> Email </td>
+						<td> <input type="email" name="email" placeholder="xyz@gmail.com"> </td>
+					</tr>
+					<tr>
+						<td> Password </td>
+						<td> <input type="password" name="pwd" placeholder="Must Be Strong Password"> </td>
+					</tr>
+					<tr>
+						<td> Mobile No. </td>
+						<td> <input type="tel" name="phn" placeholder="+91XXXX XXX XXX" > </td>
+					</tr>
+				</table>
+				<br>
+				<center>
+					<input type="button" value="Cancel" onclick="index.html" style="font-size: 80%">
+					<input type="submit" value="Submit" onclick="validate()" style="font-size: 80%">
+					<input type="reset" value="Reset" style="font-size: 80%">
+				</center>
+				<script>
+					var formx = document.getElementById("myform");
+					document.getElementById("myform").addEventListener("submit", function (event) {
+						console.log("IN Listener");
+						event.preventDefault()
+					});
+
+					function validate() {
+						var nm = document.getElementsByName("name")[0].value;
+						var pwd = document.getElementsByName("pwd")[0].value;
+						var phn = document.getElementsByName("phn")[0].value;
+						var eml = document.getElementsByName("email")[0].value;
+						var patt = /^\d{10}$/;
+						var chkphn = patt.test(phn);
+						console.log(chkphn);
+						console.log("In func");
+						if (nm == "") {
+							alert("NAME is Required");
+						}
+						else if (pwd == "") {
+							alert("Password is Required");
+						}
+						else if (eml == "") {
+							alert("Email is Required");
+						}
+						else if (phn == "") {
+							alert("Phone Number is Required");
+						}
+						else if (chkphn == false) {
+							alert("Phone Number Of Ten Digits");
+						}
+						else {
+							window.location.href = "./index.html";
+						}
+
+					}
+				</script>
+			</fieldset>
+	</div>
+
+	</form>
+</body>
+
+</html>
